@@ -12,9 +12,7 @@ module.exports = (env, callback) ->
     groupSort: {}
 
   # assign defaults any option not set in the config file
-  options = env.config.paginator or {}
-  for key, value of defaults
-    options[key] ?= defaults[key]
+  
 
   getArticles = (contents) ->
     # helper that returns a list of articles found in *contents*
